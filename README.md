@@ -4,6 +4,7 @@ Bienvenido al repositorio de Sistemas Operativos I, con un enfoque mayoritario e
 ## Prácticas
 
 ### Práctica 1: Tratamiento de Cadenas y Gestor de Pilas
+Primer proyecto de Sistemas Operativos I, de la asignatura de 2º curso de Ingeniería Informática, en la UIB.
 
 **Tratamiento de Cadenas:**
 - Implementa funciones similares a `<string.h>`.
@@ -13,6 +14,31 @@ Bienvenido al repositorio de Sistemas Operativos I, con un enfoque mayoritario e
 - Implementa un gestor de pilas dinámico y genérico.
 - Capaz de manejar elementos de cualquier tipo.
 - Operaciones básicas de pila: apilar, desapilar, y verificar si está vacía.
+
+### Practica 2: MiniShell
+
+Segundo proyecto de Sistemas Operativos I, de la asignatura de 2º curso de Ingeniería Informática, en la UIB.
+
+Esta práctica consistirá en la implementación de un mini shell básico basado en bash de Linux. Para su correcto funcionamiento se ha hecho por niveles, es decir, se ha dividido para desarrollarlo progresivamente, concretamente en seis niveles, y finalmente obtener el my_shell.c
+
+**Caracteristicas del MiniShell:**
+
+ * Admitirá varios comandos internos.
+ * Admitirá comandos de shell estándar.
+ * Admitirá la redirección de la salida de un comando a un archivo.
+ * Admitirá procesos en segundo plano.
+ * Se admitirá la interrupción con Ctrl + C y Ctrl + Z.
+
+**Projecto hecho por:**
+
+ * Grupo: LaTripleta
+   * Atienzar Martinez, Blanca
+   * Bibiloni Martinez, Pau Toni
+   * Pueyo Almodóvar, Unai
+
+**Observaciones del projecto:**
+
+Principalmente, esta practica constaba en crear un miniShell, lo que nos parecio mas sencillo despues de ya haberlo creado, pensamos que fueron los niveles mas basicos y principales (nivel1.c, nivel2.c, nivel3.c). Por otro lado, el resto de niveles (nivel4.c, nivel5.c, nivel6.c) fueron mas dificiles porque en estos surgieron errores o warnings de niveles inferiores a estos que no habian surgido hasta el momento, lo que nos hizo volver hacia atras en varios momentos, y relentizar el tiempo para ejecutar esta practica.
 
 ## Contribuciones
 
