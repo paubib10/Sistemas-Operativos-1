@@ -40,6 +40,38 @@ Esta práctica consistirá en la implementación de un mini shell básico basado
 
 Principalmente, esta practica constaba en crear un miniShell, lo que nos parecio mas sencillo despues de ya haberlo creado, pensamos que fueron los niveles mas basicos y principales (nivel1.c, nivel2.c, nivel3.c). Por otro lado, el resto de niveles (nivel4.c, nivel5.c, nivel6.c) fueron mas dificiles porque en estos surgieron errores o warnings de niveles inferiores a estos que no habian surgido hasta el momento, lo que nos hizo volver hacia atras en varios momentos, y relentizar el tiempo para ejecutar esta practica.
 
+### Práctica 3: Hilos y Exclusión Mutua
+
+En esta práctica, implementaremos un sistema de hilos que accederán concurrentemente a una pila, garantizando la exclusión mutua para operaciones seguras.
+
+**Desafío**
+- Gestionar el acceso concurrente de múltiples hilos a una pila compartida de forma segura y consistente.
+
+**Conceptos Clave:**
+- Procesos e Hilos en C de Unix/Linux
+- Semáforos y exclusión mutua
+- Librería pthread.h: `pthread_create()`, `pthread_join()`, `pthread_exit()`, `pthread_self()`, `pthread_mutex_lock()`, `pthread_mutex_unlock()`
+- Macro `PTHREAD_MUTEX_INITIALIZER`
+
+**Implementación:**
+1. **Preparación de la Pila:**
+   - Verificar y crear la pila según sea necesario.
+   - Manejar la inicialización y actualización de la pila de manera adecuada.
+
+2. **Creación de Hilos:**
+   - Crear 10 hilos para acceder a la pila de forma concurrente.
+
+3. **Función del Hilo:**
+   - Implementar una función segura que cada hilo ejecutará.
+   - Acceder, modificar e insertar datos en la pila utilizando un mutex.
+
+4. **Espera y Volcado de Datos:**
+   - El hilo principal espera a que todos los hilos terminen.
+   - Guardar la pila en un archivo después de la ejecución de los hilos.
+
+5. **Comprobación de Datos:**
+   - Reconstruir la pila desde el archivo y realizar cálculos estadísticos.
+
 ## Contribuciones
 
 Siéntete libre de contribuir añadiendo tus propias soluciones, proponiendo mejoras o sugiriendo nuevos ejercicios. La diversidad de perspectivas enriquecerá nuestro aprendizaje colectivo.
